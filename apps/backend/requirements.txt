@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+portalocker
+pytest
+httpx
+ruff
+black
+mypy

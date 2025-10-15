@@ -1,0 +1,53 @@
+{
+  "arts": [
+    {
+      "code": "dragon_elephant",
+      "name": "龙象劲",
+      "type": "inner",
+      "description": "以大力运转经脉，提升气血并缓慢回复真气。",
+      "effects": {"max_hp": 4, "mp_regen": 1}
+    },
+    {
+      "code": "snowfall_sword",
+      "name": "雪落十三式",
+      "type": "sword",
+      "description": "轻快剑势，兼具点穴与连斩。",
+      "effects": {"agility": 1}
+    }
+  ],
+  "enemies": [
+    {
+      "code": "bandit",
+      "name": "流寇",
+      "stats": {"force": 3, "agility": 2, "inner": 1, "mind": 1},
+      "max_hp": 16,
+      "max_mp": 3,
+      "arts": ["bandit_blade"],
+      "skills": ["slash"],
+      "description": "手持朽刀的山贼。",
+      "rewards": ["陈旧的银两"]
+    },
+    {
+      "code": "ambusher",
+      "name": "伏兵",
+      "stats": {"force": 4, "agility": 3, "inner": 1, "mind": 1},
+      "max_hp": 18,
+      "max_mp": 2,
+      "arts": ["bandit_blade"],
+      "skills": ["cripple"],
+      "description": "暗处偷袭之徒。",
+      "rewards": ["缎布"]
+    },
+    {
+      "code": "hermit_master",
+      "name": "隐世高人",
+      "stats": {"force": 5, "agility": 4, "inner": 4, "mind": 3},
+      "max_hp": 26,
+      "max_mp": 8,
+      "arts": ["dragon_elephant", "snowfall_sword"],
+      "skills": ["slow_strike"],
+      "description": "踏雪无痕的剑客考验。",
+      "rewards": ["雪落十三式"]
+    }
+  ]
+}
