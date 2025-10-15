@@ -1,0 +1,20 @@
+# Node
+node_modules/
+.pnpm-store/
+
+# Python
+**/__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# Vite
+apps/frontend/dist/
+
+# FastAPI storage
+apps/backend/storage/*.json
+
+# Editors
+.vscode/
+.idea/
+.DS_Store

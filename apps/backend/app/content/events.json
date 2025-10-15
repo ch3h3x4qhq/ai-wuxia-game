@@ -1,0 +1,68 @@
+[
+  {
+    "code": "tea_house",
+    "name": "茶楼歇脚",
+    "description": "城镇茶楼热气腾腾，江湖传闻络绎不绝。",
+    "tags": ["town", "road"],
+    "weight": 3,
+    "choices": [
+      {"text": "品茗调息", "effects": {"hp": 4, "mp": 2}},
+      {"text": "倾听江湖", "effects": {"flag": {"heard_rumor": true}}}
+    ]
+  },
+  {
+    "code": "hermit_guidance",
+    "name": "高人指点",
+    "description": "隐者拂袖，似欲传授一招半式。",
+    "tags": ["road", "ruin"],
+    "weight": 2,
+    "choices": [
+      {"text": "谨记口诀", "effects": {"gain_art": "snowfall_sword"}},
+      {"text": "切磋一番", "effects": {"start_combat": "hermit_master"}}
+    ]
+  },
+  {
+    "code": "ambush",
+    "name": "伏兵埋伏",
+    "description": "树影摇曳，数名伏兵暗中窥伺。",
+    "tags": ["road", "ruin"],
+    "weight": 4,
+    "choices": [
+      {"text": "拔剑正面", "effects": {"start_combat": "ambusher"}},
+      {"text": "放下银两", "effects": {"loot": "散碎银两", "hp": -2}}
+    ]
+  },
+  {
+    "code": "ancient_shrine",
+    "name": "古祠祈愿",
+    "description": "荒废古祠仍燃残香。",
+    "tags": ["ruin", "boss"],
+    "weight": 2,
+    "choices": [
+      {"text": "焚香祷告", "effects": {"mp": 3}},
+      {"text": "以血祭坛", "effects": {"hp": -3, "flag": {"blood_oath": true}}}
+    ]
+  },
+  {
+    "code": "lonely_tomb",
+    "name": "荒道孤坟",
+    "description": "荒草间旧墓碑倾斜。",
+    "tags": ["road", "ruin"],
+    "weight": 2,
+    "choices": [
+      {"text": "默哀埋骨", "effects": {"hp": 2}},
+      {"text": "搜寻遗物", "effects": {"loot": "旧玉坠"}}
+    ]
+  },
+  {
+    "code": "raider_trade",
+    "name": "流寇交易",
+    "description": "几名流寇挥舞着缴获的物品招摇撞骗。",
+    "tags": ["road", "town"],
+    "weight": 3,
+    "choices": [
+      {"text": "硬闯夺回", "effects": {"start_combat": "bandit"}},
+      {"text": "购入兵器", "effects": {"loot": "精铁短刀", "mp": -1}}
+    ]
+  }
+]
